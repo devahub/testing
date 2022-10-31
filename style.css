@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+*{
+margin:0;
+padding:0 ;
+font-family: 'Poppins', sans-serif;
+box-sizing:border-box;
+}
+
+body{
+    background: #000000 ;
+
+    color: #fff;
+
+}
+
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(images/pexels-aleksandar-pasaric-1820770.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+.container img{
+    height:100px;
+    width:170px;
+
+}
+nav{
+    display:flex;
+    align-items: center;
+    /* margin-left: 832px; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+   
+
+}
+nav ul{
+   
+   position: relative;
+   right:150px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none ;
+    font-size: 18px;
+    position:relative;
+    
+}
+nav ul li a::after{
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #83132b;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.2s;
+}
+nav ul li a:hover::after{
+    width:50px;
+
+}
+.header-text{
+    margin-top: 180px;
+    font-size: 30px;
+    padding:20px
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+.header-text h4{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #ff004f; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff004f; }
+  }
+.header-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.header-left img{
+    margin-top: 100px;
+    margin-left: 50px;
+    height:250px;
+    width:200px;
+    border-radius:10px;
+}
+.header-text h1{
+text-align: center;
+}
+
+nav h3{
+    font-family: 'Sacramento', cursive;
+    font-size: 50px;
+}
